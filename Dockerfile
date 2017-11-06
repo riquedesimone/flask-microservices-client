@@ -7,7 +7,7 @@ ENV PATH /usr/src/app/node_modules/.bin:$PATH
 
 ADD package.json /usr/src/app/package.json
 RUN npm install --silent
-RUN nom install react-scripts -g --silent
+RUN npm install react-scripts -g --silent
 
 ADD . /usr/src/app
 
